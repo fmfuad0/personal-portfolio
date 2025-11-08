@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+[data-theme="light"] {
+    --color-bg: #222;
+    --color-accent: #f6b846;
+}
+
+/* Deep Blue */
+[data-theme="blue"] {
+    --color-bg: #0d1b2a;
+    --color-accent: #4f9eff;
+}
+
+/* Emerald Green */
+[data-theme="green"] {
+    --color-bg: #061c17;
+    --color-accent: #00ffb3;
+}
+
+/* Sunset Orange */
+[data-theme="orange"] {
+    --color-bg: #1a0e00;
+    --color-accent: #ff7849;
+}
+
+/* Royal Purple */
+[data-theme="purple"] {
+    --color-bg: #1c1028;
+    --color-accent: #a259ff;
+}
+
+/* Crimson Red */
+[data-theme="red"] {
+    --color-bg: #250000;
+    --color-accent: #ff5252;
+}
+
+/* Amber Gold */
+[data-theme="amber"] {
+    --color-bg: #1b1500;
+    --color-accent: #ffb400;
+}
+
+/* Teal Mist */
+[data-theme="teal"] {
+    --color-bg: #0c2323;
+    --color-accent: #14b8a6;
+}
+
+/* Magenta Vibe */
+[data-theme="magenta"] {
+    --color-bg: #2a0027;
+    --color-accent: #ff66c4;
+}
+
+/* Ice Cyan */
+[data-theme="cyan"] {
+    --color-bg: #041c26;
+    --color-accent: #4ac8ed;
+}
+
+/* Lime Glow */
+[data-theme="lime"] {
+    --color-bg: #142300;
+    --color-accent: #b6ff40;
+}

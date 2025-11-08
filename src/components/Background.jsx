@@ -88,7 +88,7 @@ const Background = () => {
                     <rect className="line" x="1666.4" width="0.9" height="1080" fill="#4C3A90" />
                 </g>
 
-                <g className="lights" style={{ opacity: 0.9, fill: "#f6b846" }}>
+                <g className="lights" style={{ opacity: 0.9, fill: 'var(--color-accent)' }}>
                     <path
                         className="light1"
                         d="M619.5,298.4H615v19.5h4.5V298.4z M619.5,674.8H615v9.8h4.5V674.8z M619.5,135.1H615v5.6h4.5V135.1z M619.5,55.5H615v68.7h4.5V55.5z"
