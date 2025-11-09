@@ -10,6 +10,7 @@ import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import {useNavigate, useParams} from "react-router-dom";
 
 const Sidebar = () => {
+    const p = useParams()
     const navigate = useNavigate();
     const [selected, setSelected] = useState('about');
     const [theme, setTheme] = useState('teal');
