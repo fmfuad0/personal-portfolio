@@ -3,11 +3,11 @@ import ForeverCover from '../data/project-images/FOREVER-cover.png'
 import ForeverScreenshot1 from '../data/project-images/FOREVER-Screenshot-1.png'
 import ForeverScreenshot2 from '../data/project-images/FOREVER-Screenshot-2.png'
 import ForeverScreenshot3 from '../data/project-images/FOREVER-Screenshot-3.png'
-import StudentPortalCover from '../data/project-images/Student-portal-cover.png'
-import StudentProtalScreenshot1 from '../data/project-images/Student-Portal-screenshot-1.png'
-import StudentProtalScreenshot2 from '../data/project-images/Student-Portal-screenshot-2.png'
-import StudentProtalScreenshot3 from '../data/project-images/Student-Portal-screenshot-3.png'
-
+import StudentPortalCover from '../data/project-images/Student-Portal-cover.png'
+import StudentPortalScreenshot1 from '../data/project-images/Student-Portal-screenshot-1.png'
+import StudentPortalScreenshot2 from '../data/project-images/Student-Portal-screenshot-2.png'
+import StudentPortalScreenshot3 from '../data/project-images/Student-Portal-screenshot-3.png'
+e
 export const projectsData = [
     {
         id: 1,
@@ -32,7 +32,7 @@ export const projectsData = [
         image: StudentPortalCover,
         coverImage: StudentPortalCover,
         screenshots: [
-            StudentProtalScreenshot1, StudentProtalScreenshot2, StudentProtalScreenshot3
+            StudentPortalScreenshot1, StudentPortalScreenshot2, StudentPortalScreenshot3
         ],
         description:
             "A modern personal portfolio with animations, theme toggle, and smooth UI interactions.",
