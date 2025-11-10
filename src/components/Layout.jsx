@@ -12,7 +12,7 @@ const Layout = ({children}) => {
         <div className={`h-screen `}>
             <div className={`${open?"absolute" : "hidden"} top-0 left-0 h-full w-full z-100 smooth-transition`} style={{backgroundColor : 'rgba(0, 0, 0, 0.8)'}}>
                 <div className={`absolute top-[50%] left-[50%] -translate-[50%] overflow-hidden rounded-lg smooth-transition`}>
-                    <Button className={`relative left-[91%] top-10 fond-bold cursor-pointer hover:border-red-500 rounded-full z-100 hover:bg-[var(--color-)] hover:text-red-700 p-0.5 border smooth-transition`} onClick={()=>setOpen(false)} >Close</Button>
+                    <Button className={`relative left-[91%] top-10 fond-bold cursor-pointer hover:border-red-500 rounded-full z-100 hover:bg-[var(--color-)] hover:text-red-700 p-0.5 border smooth-transition`} onClick={()=>setOpen(false)} ></Button>
                     <img src={avatar} alt="Avatar" className="w-150 h-150   object-cover" />
                 </div>
             </div>
