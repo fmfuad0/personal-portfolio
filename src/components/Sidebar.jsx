@@ -4,7 +4,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightModeOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DescriptionIcon from '@mui/icons-material/Description';
-import HandyManIcon from '@mui/icons-material/HandyMan';
+import HandyIcon from '@mui/icons-material/HandyMan';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import {useNavigate, useParams} from "react-router-dom";
@@ -68,7 +68,7 @@ const Sidebar = () => {
                 </div>
                 <div className={` py-4 flex flex-col items-center gap-1 ${selected==='projects' ? ' border-[var(--color-accent)]' : 'border-gray-500'} border-b-[0.5px]  w-full text-center rounded-sm group cursor-pointer`} onClick={(e)=>{e.preventDefault();handleClick('projects')}}>
 
-                    <HandyManIcon
+                    <HandyIcon
                         style={{ color: "white" }}
                         className={`group-hover:!text-[var(--color-accent)] smooth-transition duration-300 cursor-pointer w-[100%]  ${selected==='projects' ? '!text-[var(--color-accent)]' : ''}`}
                     />

@@ -7,7 +7,6 @@ import figmaIcon from '../assets/figma.png'
 import githubIcon from '../assets/github.png'
 import mongodbIcon from '../assets/mongodb.png'
 import mongooseIcon from '../assets/mongoose.png'
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 const Resume = () => {
 
