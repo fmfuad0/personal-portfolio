@@ -44,7 +44,7 @@ const Resume = () => {
         </div>
 
     return (
-        <div className={``}>
+        <div className={`backdrop-blur-sm `}>
             <div className={`fading-border border-[thin] `}>
                 <h1 className={`text-white p-5 text-xl font-semibold tracking-widest`}><span className={`text-[var(--color-accent)]`}>R</span>esume </h1>
             </div>

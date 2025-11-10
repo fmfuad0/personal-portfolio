@@ -22,7 +22,7 @@ const Layout = ({children}) => {
                     <Sidebar/>
                     <ProfileCard setOpen={setOpen} setAvatar={setAvatar}/>
                 </div>
-                <div className={`bg-[var(--color-bg)] w-[45%] h-[620px] relative top-[100px] overflow-scroll -translate-y-[20px] left-0 `}>
+                <div className={`bg-transparent w-[45%] h-[620px] relative top-[100px] overflow-scroll -translate-y-[20px] left-0 `}>
                     {children}
                 </div>
             </div>

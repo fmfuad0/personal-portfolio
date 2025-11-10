@@ -15,7 +15,7 @@ const ProjectGrid = () => {
             : projectsData.filter((p) => p.category === selectedCategory);
 
     return (
-        <section className="w-full min-h-screen py-16 px-10 bg-[var(--color-bg)] text-white">
+        <section className="w-full backdrop-blur-sm min-h-screen py-16 px-10 text-white">
             <h2 className="text-3xl font-bold text-center text-[var(--color-accent)] mb-10">
                 My Projects
             </h2>
@@ -45,6 +45,7 @@ const ProjectGrid = () => {
             </div>
 
             {/* Modal */}
+
             <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
         </section>
     );

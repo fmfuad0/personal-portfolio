@@ -4,7 +4,7 @@ import leetcodeIcon from '../assets/icons8-leetcode-24.png'
 
 const About = () => {
     return (
-        <div className={`bg-[var(--color-bg)]`}>
+        <div className={`backdrop-blur-sm`}>
             <div className={`fading-border border-[thin] `}>
                 <h1 className={`text-white p-5 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>A</span>bout Me </h1>
             </div>

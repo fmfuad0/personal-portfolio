@@ -8,7 +8,7 @@ const ProjectModal = ({ project, onClose }) => {
     return (
         <AnimatePresence >
             <motion.div
-                className="fixed inset-0 top-20 bg-black/70 flex justify-center items-center z-50 backdrop-blur-sm"
+                className="fixed top-0 left-5 h-full w-full flex justify-center items-center z-50 backdrop-blur-lg pr-10"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -16,7 +16,7 @@ const ProjectModal = ({ project, onClose }) => {
             >
                 <motion.div
                     onClick={(e) => e.stopPropagation()}
-                    className="bg-[var(--color-bg)] max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 rounded-xl shadow-xl text-white relative"
+                    className="bg-[var(--color-bg)]/95 max-w-3xl w-full overflow-y-auto p-6 rounded-xl shadow-xl text-white relative"
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.9, opacity: 0 }}
