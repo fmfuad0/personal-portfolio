@@ -4,7 +4,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightModeOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DescriptionIcon from '@mui/icons-material/Description';
-import HandyIcon from '@mui/icons-material/HandyMan';
+import HandyIcon from '@mui/icons-material/Handyman';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import {useNavigate, useParams} from "react-router-dom";
