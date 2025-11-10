@@ -7,7 +7,7 @@ import StudentPortalCover from '../data/project-images/Student-Portal-cover.png'
 import StudentPortalScreenshot1 from '../data/project-images/Student-Portal-screenshot-1.png'
 import StudentPortalScreenshot2 from '../data/project-images/Student-Portal-screenshot-2.png'
 import StudentPortalScreenshot3 from '../data/project-images/Student-Portal-screenshot-3.png'
-e
+
 export const projectsData = [
     {
         id: 1,
