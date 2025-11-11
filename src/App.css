@@ -31,14 +31,6 @@ body {
     51%, 100% { opacity: 0; }
 }
 
-
-{
-color: rgba(0, 0, 0, 0.7)
-;
-}
-
-
-
 .profile-card {
     position: relative;
     z-index: 10; /* higher than background elements */
