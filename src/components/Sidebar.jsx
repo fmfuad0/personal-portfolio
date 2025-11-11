@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DescriptionIcon from '@mui/icons-material/Description';
-import HandyIcon from '@mui/icons-material/HandyMan';
+import HandyIcon from '@mui/icons-material/Handyman';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import {useNavigate} from "react-router-dom";
