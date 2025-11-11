@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Icon } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ZoomOutIcon from "@mui/icons-material/zoomOut";
-import ZoomInIcon from "@mui/icons-material/zoomIn";
+import ZoomOutIcon from '@mui/icons-material/ZoomOut';
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import CloseIcon from "@mui/icons-material/close";
 import FullscreenIcon from "@mui/icons-material/fullscreen";
 import { motion } from "framer-motion";
