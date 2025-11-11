@@ -1,28 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Background from "./Background.jsx";
 import Sidebar from "./Sidebar.jsx";
 import ProfileCard from "./ProfileCard.jsx";
+import ImageViewer from "./ViewImage.jsx";
+import { useImageContext } from "../context/ViewImageContext.jsx";
+import {useParams} from "react-router-dom";
 
-const Layout = ({children}) => {
-    const [open, setOpen] = React.useState(false);
-    const [avatar, setAvatar] = React.useState();
+const Layout = ({ children }) => {
+    const [visible, setVisible] = useState(true);
+    const [selected, setSelected] = useState("about");
+    const { images, index, showImages, setShowImages } = useImageContext();
+    const [size, setSize] = useState(window.innerWidth);
+    const [showChildrens, setShowChildrens] = useState(!visible);
+    console.log(useParams())
+    // handle screen resize
+    useEffect(() => {
+        const handleResize = () => setSize(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    console.log(showChildrens, visible);
+    // toggle sidebar based on screen width
+    useEffect(() => {
+        setVisible(size > 1150);
+    }, [size]);
+
+    useEffect(() => {
+        setShowChildrens(!visible || size>1150);
+    }, [visible, size]);
 
     return (
-        <div className={`h-screen `}>
-            <div className={`${open?"absolute" : "hidden"} top-0 left-0 h-full w-full z-100 smooth-transition`} style={{backgroundColor : 'rgba(0, 0, 0, 0.8)'}}>
-                <div className={`absolute top-[50%] left-[50%] -translate-[50%] overflow-hidden rounded-lg smooth-transition`}>
-                    <button className={`relative left-[93%] top-10 fond-bold cursor-pointer hover:border-red-500 rounded-full z-100 hover:bg-[var(--color-)] hover:text-red-700 border smooth-transition px-2`} onClick={()=>setOpen(false)} >X</button>
-                    <img src={avatar} alt="Avatar" className="w-150 h-150   object-cover" />
+        <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+            {/* Image viewer overlay */}
+            {showImages && (
+                <div className="absolute inset-0 z-[100]">
+                    <ImageViewer
+                        images={images}
+                        index={index}
+                        onClose={() => setShowImages(false)}
+                    />
                 </div>
-            </div>
-            <Background/>
-            <div className={`flex items-center justify-center`}>
-                <div className={`max-w-[55%] flex items-center`}>
-                    <Sidebar/>
-                    <ProfileCard setOpen={setOpen} setAvatar={setAvatar}/>
+            )}
+
+            {/* Background layer */}
+            <Background />
+
+            {/* Centered layout container */}
+            <div className="relative flex items-center md:pt-10 justify-center w-full max-w-[1400px] mx-auto px-4">
+                {/* Sidebar - vertically centered */}
+                <div className="flex items-center h-full justify-center">
+                    <Sidebar
+                        setVisible={setVisible}
+                        visible={visible}
+                        selected={selected}
+                        setSelected={setSelected}
+                        size={size}
+                    />
                 </div>
-                <div className={`bg-transparent w-[45%] h-[620px] relative top-[100px] overflow-scroll -translate-y-[20px] left-0 `}>
-                    {children}
+                {/* Profile + Content Section */}
+                <div className="flex lg:items-center justify-center">
+                    {visible && <ProfileCard setSelected={setSelected} />}
+                    {showChildrens && <div
+                        className={`bg-transparent shadow-[0_1px_2px_var(--color-accent)] backdrop-blur-sm rounded-xl ${
+                            visible ? "w-[45vw]" : "w-[60vw]"
+                        } h-[650px] overflow-y-scroll scrollbar-hide`}
+                    >
+                        {children}
+                    </div>}
                 </div>
             </div>
         </div>

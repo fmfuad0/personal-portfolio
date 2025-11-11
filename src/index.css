@@ -7,38 +7,28 @@
 
 /* Deep Blue */
 [data-theme="blue"] {
-    --color-bg: #0d1b2a;
-    --color-accent: #4f9eff;
+    --color-bg: #091b1c;
+    --color-accent: #96bae8;
 }
 
 /* Emerald Green */
 [data-theme="green"] {
     --color-bg: #061c17;
-    --color-accent: #00ffb3;
+    --color-accent: #1aa164;
 }
 
 /* Sunset Orange */
 [data-theme="orange"] {
-    --color-bg: #1a0e00;
-    --color-accent: #ff7849;
+    --color-bg: #1f1915;
+    --color-accent: #f37c56;
 }
 
-/* Royal Purple */
-[data-theme="purple"] {
-    --color-bg: #1c1028;
-    --color-accent: #a259ff;
-}
 
-/* Crimson Red */
-[data-theme="red"] {
-    --color-bg: #250000;
-    --color-accent: #ff5252;
-}
 
 /* Amber Gold */
 [data-theme="amber"] {
-    --color-bg: #1b1500;
-    --color-accent: #ffb400;
+    --color-bg: #1e1e15;
+    --color-accent: #ecbb4f;
 }
 
 /* Teal Mist */
@@ -47,20 +37,3 @@
     --color-accent: #14b8a6;
 }
 
-/* Magenta Vibe */
-[data-theme="magenta"] {
-    --color-bg: #2a0027;
-    --color-accent: #ff66c4;
-}
-
-/* Ice Cyan */
-[data-theme="cyan"] {
-    --color-bg: #041c26;
-    --color-accent: #4ac8ed;
-}
-
-/* Lime Glow */
-[data-theme="lime"] {
-    --color-bg: #142300;
-    --color-accent: #b6ff40;
-}

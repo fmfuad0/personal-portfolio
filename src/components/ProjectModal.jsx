@@ -1,22 +1,38 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {Tooltip} from "@mui/material";
+import {useImageContext} from "../context/ViewImageContext.jsx";
 
 const ProjectModal = ({ project, onClose }) => {
+    const {setShowImages, setImages, setIndex}= useImageContext();
+    const scrollRef = useRef(null);
+    useEffect(() => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }, [project])
+
+    const handleClick = (e, images, index)=>{
+        e.stopPropagation();
+        setIndex(index);
+        setImages(images);
+        setShowImages(true);
+    }
     if (!project) return null;
 
     return (
         <AnimatePresence >
             <motion.div
-                className="fixed top-0 left-5 h-full w-full flex justify-center items-center z-50 backdrop-blur-lg pr-10"
+                className="h-full w-full flex items-center z-50 backdrop-blur-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={onClose}
+                ref={scrollRef}
             >
                 <motion.div
                     onClick={(e) => e.stopPropagation()}
-                    className="bg-[var(--color-bg)]/95 max-w-3xl w-full overflow-y-auto p-6 rounded-xl shadow-xl text-white relative"
+                    className="bg-[var(--color-bg)]/95 min-w-full  overflow-y-auto px-10 p-6 rounded-xl shadow-xl text-white relative"
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.9, opacity: 0 }}
@@ -24,12 +40,14 @@ const ProjectModal = ({ project, onClose }) => {
                     <h2 className="text-2xl text-[var(--color-accent)] font-semibold mb-4">
                         {project.title}
                     </h2>
-
-                    <img
-                        src={project.coverImage}
-                        alt={project.title}
-                        className="rounded-lg mb-4 w-full h-full object-fit"
-                    />
+                    <div className={`w-full`}>
+                        <img
+                            src={project.coverImage}
+                            alt={project.title}
+                            className="rounded-lg mb-4 w-full h-100 object-fit"
+                            onClick={(e)=>handleClick(e, [project.coverImage], 0, true)}
+                        />
+            </div>
 
                     <p className="text-sm text-white/90 mb-4">{project.description}</p>
 
@@ -58,6 +76,7 @@ const ProjectModal = ({ project, onClose }) => {
                                         src={src}
                                         alt={`screenshot-${idx}`}
                                         className="rounded-lg h-48 w-auto object-cover flex-shrink-0 hover:scale-105 smooth-transition cursor-pointer"
+                                        onClick={(e)=>handleClick(e, project.screenshots, idx, true)}
                                     />
                                 ))}
                             </div>

@@ -17,15 +17,15 @@ const Resume = () => {
                 // rotation: 0.25,
                 textSize: '14px',
                 // pathTransitionDuration: 0.5,
-                trailColor: `var(--color-bg)`,
+                trailColor: icon? 'var(--color-bg)':`transparent`,
                 textColor: 'var(--color-accent)',
                 pathColor: 'var(--color-accent)',
             })}
         >
-        {icon?<i className={`${icon} text-[var(--color-accent)] text-2xl mb-2 w-[24px]`}/> : ""}
+        {icon?<i className={`${icon} text-[var(--color-accent)] text-xl mb-2 w-[24px]`}/> : ""}
         {image?<img src={image} alt={''} className={'w-[45px]'}/> : ""}
         <div style={{marginTop: -10}}>
-            {value? <strong className={`text-lg text-[var(--color-accent)] p-0`}>{value}%</strong>:""}
+            {value? <strong className={`text-lg tracking-widest text-[var(--color-accent)] p-0`}>{value}%</strong>:""}
         </div>
     </CircularProgressbarWithChildren>;
     const progressBar = (value, text)=>
@@ -43,14 +43,14 @@ const Resume = () => {
         </div>
 
     return (
-        <div className={`backdrop-blur-sm `}>
+        <div className={`backdrop-blur-xs bg-[var(--color-bg)]/30`}>
             <div className={`fading-border border-[thin] `}>
                 <h1 className={`text-white p-5 text-xl font-semibold tracking-widest`}><span className={`text-[var(--color-accent)]`}>R</span>esume </h1>
             </div>
             {/*Education*/}
             <div className={`px-6`}>
-                <div className={`fading-border border-[thin] flex items-center gap-2 py-2`}>
-                    <i className="fa-brands fa-leanpub text-[var(--color-accent)] text-3xl border rounded-full p-1"></i>
+                <div className={`fading-border border-[thin] flex items-center gap-2 py-3`}>
+                    <i className="fa-brands fa-leanpub text-[var(--color-accent)] text-xl border rounded-full p-1"></i>
                     <h1 className={`text-white tracking-widest text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>E</span>ducation</h1>
                 </div>
                 <div className={'flex flex-col gap-1 py-3 px-2'} >
@@ -73,11 +73,12 @@ const Resume = () => {
                 </div>
             </div>
             {/*Programming skills*/}
-            <div className={`fading-border border-[thin] `}>
-                <h1 className={`text-white tracking-widest px-6 my-3 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>C</span>oding <span className={`text-[var(--color-accent)]`}>S</span>kills </h1>
+            <div className={`mx-6 py-1 flex items-center gap-2 fading-border border-[thin] `}>
+                <i className="fa-solid fa-code p-1 py-1.5  text-[var(--color-accent)] text-xl border rounded-full"></i>
+                <h1 className={`text-white tracking-widest my-3 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>P</span>rogramming <span className={`text-[var(--color-accent)]`}>S</span>kills </h1>
             </div>
-            <div className={`py-3`}>
-                <div className={'flex justify-around gap-15 py-5 flex-wrap'} >
+            <div className={`my-3 px-6`}>
+                <div className={'flex justify-around gap-15 py-5 flex-wrap px-2'} >
                     <div className={`text-center w-[100px]`}>
                         {progressCircle(90, 'fa-brands fa-html5')}
                         <strong className={`text-gray-400` }>HTML/CSS</strong>
@@ -116,11 +117,12 @@ const Resume = () => {
                 </div>
             </div>
             {/*Tool stack*/}
-            <div className={`fading-border border-[thin]`}>
-                <h1 className={`text-white tracking-widest px-6 my-3 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>T</span>ool <span className={`text-[var(--color-accent)]`}>S</span>tack </h1>
+            <div className={`fading-border border-[thin] gap-2 mx-6 py-1 flex items-center`}>
+                <i className="fa-solid fa-toolbox p-1.5 text-[var(--color-accent)] text-xl border rounded-full"></i>
+                <h1 className={`text-white tracking-widest my-3 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>T</span>ool <span className={`text-[var(--color-accent)]`}>S</span>tack </h1>
             </div>
                 <div className={`py-3`}>
-                    <div className={'flex justify-around'} >
+                    <div className={'flex justify-around flex-wrap'} >
                         <div className={`text-center w-[70px]`}>
                             {progressCircle(0, '', vscodeIcon)}
                             <strong className={`text-gray-400` }>VS Code</strong>
@@ -149,10 +151,11 @@ const Resume = () => {
                     </div>
                 </div>
             {/*General Skills*/}
-                <div className={`fading-border border-[thin] mt-5 px-6`}>
+                <div className={`fading-border border-[thin] flex items-center gap-2 mt-5 mx-6 py-1`}>
+                    <i className="fa-solid fa-gear p-1 text-[var(--color-accent)] text-xl border rounded-full"></i>
                     <h1 className={`text-white tracking-widest my-3 text-xl font-semibold`}><span className={`text-[var(--color-accent)]`}>G</span>eneral <span className={`text-[var(--color-accent)]`}>S</span>kills </h1>
                 </div>
-                <div className={'py-3 px-6'} >
+                <div className={'py-3 px-8'} >
                     <div className={'flex flex-col gap-2  items-start px-2'} >
                         <div className={`w-full`}>
                             <strong className={`text-gray-400 text-xl` }>Problem Solving</strong>

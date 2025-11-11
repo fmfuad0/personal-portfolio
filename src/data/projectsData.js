@@ -1,23 +1,29 @@
-import ForeverDP from '../data/project-images/FOREVER-cover-full-page.png'
-import ForeverCover from '../data/project-images/FOREVER-cover.png'
-import ForeverScreenshot1 from '../data/project-images/FOREVER-Screenshot-1.png'
-import ForeverScreenshot2 from '../data/project-images/FOREVER-Screenshot-2.png'
-import ForeverScreenshot3 from '../data/project-images/FOREVER-Screenshot-3.png'
-import StudentPortalCover from '../data/project-images/Student-Portal-cover.png'
-import StudentPortalScreenshot1 from '../data/project-images/Student-Portal-screenshot-1.png'
-import StudentPortalScreenshot2 from '../data/project-images/Student-Portal-screenshot-2.png'
-import StudentPortalScreenshot3 from '../data/project-images/Student-Portal-screenshot-3.png'
+import foreverCoverFullPage from '../data/project-images/FOREVER-cover-full-page.png'
+import foreverCover from '../data/project-images/FOREVER-cover.png'
+import foreverScreenshot1 from '../data/project-images/FOREVER-Screenshot-1.png'
+import foreverScreenshot2 from '../data/project-images/FOREVER-Screenshot-2.png'
+import foreverScreenshot3 from '../data/project-images/FOREVER-Screenshot-3.png'
+import studentPortalCover from '../data/project-images/Student-Portal-cover.png'
+import studentPortalScreenshot1 from '../data/project-images/Student-Portal-screenshot-1.png'
+import studentPortalScreenshot2 from '../data/project-images/Student-Portal-screenshot-2.png'
+import studentPortalScreenshot3 from '../data/project-images/Student-Portal-screenshot-3.png'
+import youtubeCloneCoverFullPage from '../data/project-images/youtube-clone-cover-full-page.png'
+import youtubeCloneCover from '../data/project-images/youtube-clone-cover.png'
+import youtubeCloneScreenshot1 from '../data/project-images/youtube-clone-screenshot-1.png'
+import youtubeCloneScreenshot2 from '../data/project-images/youtube-clone-screenshot-2.png'
+import youtubeCloneScreenshot3 from '../data/project-images/youtube-clone-screenshot-3.png'
+import youtubeCloneScreenshot4 from '../data/project-images/youtube-clone-screenshot-4.png'
 
 export const projectsData = [
     {
         id: 1,
         title: "E-Commerce Platform",
-        category: "Full-stack",
+        category: ["Frontend"],
         tech: ["React", "Node.js", "MongoDB", "Express"],
-        image: ForeverDP,
-        coverImage: ForeverCover,
+        image: foreverCoverFullPage,
+        coverImage: foreverCover,
         screenshots: [
-            ForeverScreenshot1, ForeverScreenshot2, ForeverScreenshot3
+            foreverScreenshot1, foreverScreenshot2, foreverScreenshot3
         ],
         description:
             "A complete MERN e-commerce app featuring authentication, cart, payments, and admin dashboard.",
@@ -27,27 +33,27 @@ export const projectsData = [
     {
         id: 2,
         title: "Student Management Portal",
-        category: "Frontend",
+        category: ["Full-stack", "Backend", "Frontend"],
         tech: ["React", "Tailwind", "Node.js", "MongoDB", "Express"],
-        image: StudentPortalCover,
-        coverImage: StudentPortalCover,
+        image: studentPortalCover,
+        coverImage: studentPortalCover,
         screenshots: [
-            StudentPortalScreenshot1, StudentPortalScreenshot2, StudentPortalScreenshot3
+            studentPortalScreenshot1, studentPortalScreenshot2, studentPortalScreenshot3
         ],
         description:
-            "A modern personal portfolio with animations, theme toggle, and smooth UI interactions.",
+            "A student management portal that displays student results, bills and other information individually.Also handles authority announcement, course and section registration and submitting student application related operations.",
         code: "https://github.com/fmfuad0/student-management-portal",
         live: "https://stu-management-portal.netlify.app/",
     },
     {
         id: 3,
         title: "Youtube UI Clone (*Under Development*)",
-        category: "Backend",
+        category: ["Full-stack", "Backend", "Frontend"],
         tech: ["Node.js", "Express", "JWT", "MongoDB"],
-        image: "/images/api-dashboard.jpg",
+        image: youtubeCloneCoverFullPage,
+        coverImage: youtubeCloneCover,
         screenshots: [
-            "/images/api1.jpg",
-            "/images/api2.jpg",
+            youtubeCloneScreenshot1, youtubeCloneScreenshot2, youtubeCloneScreenshot3, youtubeCloneScreenshot4
         ],
         description:
             "A backend dashboard for API management with JWT-based authentication and role access.",

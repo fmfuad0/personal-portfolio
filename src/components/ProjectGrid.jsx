@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import { projectsData } from "../data/projectsData.js";
 import ProjectCard from "./ProjectCard.jsx";
-import ProjectModal from "./ProjectModal.jsx";
 
 const categories = ["All", "Frontend", "Backend", "Full-stack"];
 
-const ProjectGrid = () => {
+const ProjectGrid = ({setSelectedProject}) => {
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const [selectedProject, setSelectedProject] = useState(null);
 
     const filteredProjects =
         selectedCategory === "All"
             ? projectsData
-            : projectsData.filter((p) => p.category === selectedCategory);
+            : projectsData.filter((project) => project.category.includes(selectedCategory));
 
     return (
-        <section className="w-full backdrop-blur-sm min-h-screen py-16 px-10 text-white">
-            <h2 className="text-3xl font-bold text-center text-[var(--color-accent)] mb-10">
+        <section className=" h-full py-5 px-10 text-white">
+            <h2 className="lg:text-3xl font-bold text-center text-[var(--color-accent)] mb-5">
                 My Projects
             </h2>
 
@@ -25,7 +23,7 @@ const ProjectGrid = () => {
                 {categories.map((cat) => (
                     <button
                         key={cat}
-                        className={`px-4 py-2 rounded-full border text-sm font-medium ${
+                        className={`lg:px-4 lg:py-2 md:p-1 sm:p-0.5 p-0 rounded-full cursor-pointer border  lg:text-sm md:text-xs font-medium ${
                             selectedCategory === cat
                                 ? "bg-[var(--color-accent)] text-black"
                                 : "border-[var(--color-accent)] text-[var(--color-accent)] hover:bg-[var(--color-accent)]/10"
@@ -38,15 +36,11 @@ const ProjectGrid = () => {
             </div>
 
             {/* Grid */}
-            <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="grid xs:grid-cols-1 lg:grid-cols-2 gap-8">
                 {filteredProjects.map((p) => (
                     <ProjectCard key={p.id} project={p} onClick={setSelectedProject} />
                 ))}
             </div>
-
-            {/* Modal */}
-
-            <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
         </section>
     );
 };

@@ -4,38 +4,38 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const socials = [
     {
         name: "GitHub",
-        icon: <GitHubIcon fontSize="large" />,
+        icon: <GitHubIcon  />,
         color: "group-hover:text-green-400",
-        link: "https://github.com/yourusername",
+        link: "https://github.com/fmfuad0",
     },
     {
         name: "LinkedIn",
-        icon: <LinkedInIcon fontSize="large" />,
+        icon: <LinkedInIcon  />,
         color: "group-hover:text-blue-500",
-        link: "https://linkedin.com/in/yourusername",
+        link: "https://www.linkedin.com/in/fartin-fuad-bab684343/",
     },
     {
         name: "Facebook",
-        icon: <FacebookIcon fontSize="large" />,
+        icon: <FacebookIcon  />,
         color: "group-hover:text-blue-400",
         link: "https://facebook.com/yourusername",
     },
     {
         name: "Twitter",
-        icon: <TwitterIcon fontSize="large" />,
+        icon: <TwitterIcon  />,
         color: "group-hover:text-sky-400",
         link: "https://twitter.com/yourusername",
     },
     {
-        name: "Instagram",
-        icon: <InstagramIcon fontSize="large" />,
-        color: "group-hover:text-pink-500",
-        link: "https://instagram.com/yourusername",
+        name: "fartinfuad@gmail",
+        icon: <GoogleIcon  />,
+        color: "group-hover:text-orange-500",
+        link: "/#",
     },
 ];
 
@@ -46,14 +46,14 @@ const Social = () => {
                 Let’s Connect
             </h1>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 sm:gap-2 md:gap-6 ">
                 {socials.map((social, i) => (
                     <a
                         key={i}
                         href={social.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group flex flex-col items-center justify-center w-32 h-32  border border-white/10 rounded-2xl backdrop-blur-md  hover:shadow-[0_0_800px_var(--color-accent)] transform transition-all duration-300 hover:scale-105"
+                        className="group flex flex-col items-center justify-center lg:w-32 lg:h-32 md:w-28 md:h-28 sm:w-25 sm:h-25  border border-white/10 rounded-2xl backdrop-blur-md  hover:shadow-[0_0_800px_var(--color-accent)] transform transition-all duration-300 hover:scale-105"
                     >
                         <div className={`text-gray-300 mb-2 ${social.color}`}>
                             {social.icon}
