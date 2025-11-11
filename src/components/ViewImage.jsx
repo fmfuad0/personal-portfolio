@@ -4,7 +4,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ZoomOutIcon from '@mui/icons-material/ZoomOut';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import CloseIcon from "@mui/icons-material/Close";
-import FullscreenIcon from "@mui/icons-material/fullscreen";
+import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import { motion } from "framer-motion";
 
 const ImageViewer = ({ images = [], onClose, index = 0 }) => {
