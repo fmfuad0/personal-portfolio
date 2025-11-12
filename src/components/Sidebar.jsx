@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import DescriptionIcon from '@mui/icons-material/Description';
-import HandyIcon from '@mui/icons-material/Handyman';
+import HandymanIcon from '@mui/icons-material/Handyman';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import {useNavigate} from "react-router-dom";
@@ -114,7 +114,7 @@ const Sidebar = ({setVisible, visible, selected, setSelected, size}) => {
                 </div>
                 <div className={` py-4 flex flex-col items-center gap-1 ${selected==='projects' ? ' border-[var(--color-accent)]' : 'border-gray-500'} border-b-[0.5px]  w-full text-center rounded-sm group cursor-pointer`} onClick={(e)=>{e.preventDefault();handleClick('projects')}}>
 
-                    <HandyIcon
+                    <HandymanIcon
                         style={{ color: "white" }}
                         className={`group-hover:!text-[var(--color-accent)] smooth-transition duration-300 cursor-pointer w-[100%]  ${selected==='projects' ? '!text-[var(--color-accent)]' : ''}`}
                     />

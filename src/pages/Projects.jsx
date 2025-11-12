@@ -34,7 +34,7 @@ const Projects = () => {
                 {/*<div className={`flex gap-2`}></div>*/}
             </div>
                 <ProjectGrid setSelectedProject={setSelectedProject}/>
-            {selectedProject && <div className={`bg-black/60 min-w-full h-full absolute top-0 left-0`}>
+            {selectedProject && <div className={`bg-black/60 min-w-full absolute top-0 left-0`}>
                 <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
             </div>}
         </div>

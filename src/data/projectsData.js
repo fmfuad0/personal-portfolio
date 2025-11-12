@@ -57,7 +57,7 @@ export const projectsData = [
         ],
         description:
             "A backend dashboard for API management with JWT-based authentication and role access.",
-        live: "#",
-        code: "#",
+        live: "",
+    code: "https://github.com/fmfuad0/YouTube-clone",
     },
 ];

@@ -44,7 +44,7 @@ const ProjectModal = ({ project, onClose }) => {
                         <img
                             src={project.coverImage}
                             alt={project.title}
-                            className="rounded-lg mb-4 w-full h-100 object-fit"
+                            className="rounded-lg mb-4 w-full h-full object-fit"
                             onClick={(e)=>handleClick(e, [project.coverImage], 0, true)}
                         />
             </div>

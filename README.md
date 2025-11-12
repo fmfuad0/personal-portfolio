@@ -1,16 +1,90 @@
-# React + Vite
+# 🌐 Personal Portfolio – *Md. Fartin Mahtadi Fuad*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio!  
+This is my digital space to showcase my **skills, projects, and achievements** as a web developer.  
+Built with a focus on **modern design**, **performance**, and **clean user experience**.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./screenshots/screenshot-1.png)
+![Portfolio Screenshot](./screenshots/screenshot-2.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Visit Portfolio:** [View Live](https://portfolio-fm-fuad.netlify.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Setup & Installation
+## 🌐 Clone Repository
+    git clone https://github.com/fmfuad0/personal-portfolio.git
+
+    cd personal-portfolio
+## 🔍 Install dependencies
+    npm install
+## ▶️ Run Project
+    npm run dev
+## Open web browser and visit
+    http://localhost:5173 (or any other port if port 5173 is busy)
+
+## 🧩 Features
+
+- 🏠 Modern landing page introducing myself and my skills
+- 💼 Dynamic projects section with live demos and source code links
+- 🧠 Skills section with categorized tech stacks
+- 📬 Contact form with email integration (Formspree)
+- 🖥️ Fully responsive — optimized for all devices
+- 🌙 6 different color themes
+- ⚡ Fast performance with lazy loading and asset optimization
+
+---
+
+## 🚀 Tech Stack
+
+| Category | Technologies |
+|-----------|--------|
+| **Frontend** | React.js (Vite), JavaScript (ES6+), JSX, Material UI |
+| **Styling** | Tailwind CSS, Framer Motion, Material UI Icons |
+| **Animations** | Framer Motion |
+| **Email Handling** | Formspree / Resend |
+| **Hosting** | Netlify|
+| **Version Control** | Git & GitHub |
+
+---
+
+## 📁 Folder Structure
+```
+portfolio/
+│
+├── screenshots/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   │
+│   ├── App.jsx*
+│   ├── main.jsx*
+│
+├── index.html*
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🧠 Author
+
+- **👽 Md. Fartin Mahtadi Fuad**
+- **💻 Passionate MERN Stack Developer**
+- **📍 Green University of Bangladesh**
+
+## ⭐ Acknowledgments
+
+Special thanks to open-source creators and designers who inspire modern web design every day.  
+If you like my work, consider giving this repo a ⭐ and following me on [GitHub!](https://github.com/fmfuad0/personal-portfolio)
+
+
+
+## **Crafted with ❤️ using React + Tailwind CSS**

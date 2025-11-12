@@ -4,16 +4,15 @@ import Sidebar from "./Sidebar.jsx";
 import ProfileCard from "./ProfileCard.jsx";
 import ImageViewer from "./ViewImage.jsx";
 import { useImageContext } from "../context/ViewImageContext.jsx";
-import {useParams} from "react-router-dom";
+import socials from "../pages/Socials.jsx";
 
 const Layout = ({ children }) => {
     const [visible, setVisible] = useState(true);
-    const [selected, setSelected] = useState("about");
     const { images, index, showImages, setShowImages } = useImageContext();
     const [size, setSize] = useState(window.innerWidth);
     const [showChildrens, setShowChildrens] = useState(!visible);
-    console.log(useParams())
-    // handle screen resize
+    const tab = window.location.href.replace('http://localhost:5173/','').replace('/',)
+    const [selected, setSelected] = useState(['about', 'resume', 'projects', 'contact', 'socials'].includes(tab.toLowerCase())?tab:"about");
     useEffect(() => {
         const handleResize = () => setSize(window.innerWidth);
         window.addEventListener("resize", handleResize);
@@ -31,7 +30,6 @@ const Layout = ({ children }) => {
 
     return (
         <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
-            {/* Image viewer overlay */}
             {showImages && (
                 <div className="absolute inset-0 z-[100]">
                     <ImageViewer

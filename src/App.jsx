@@ -16,7 +16,6 @@ function App() {
             <ViewImageContext>
                 <Layout>
                     <Routes>
-                        <Route path={'/'} element={<h1 className={`text-white z-10`}>Home</h1>}/>
                         <Route path={'/about'} element={<About/>}/>
                         <Route path={'/resume'} element={<Resume/>}/>
                         <Route path={'/projects'} element={<Projects/>}/>
