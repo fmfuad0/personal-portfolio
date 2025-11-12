@@ -4,8 +4,8 @@ Welcome to my personal portfolio!
 This is my digital space to showcase my **skills, projects, and achievements** as a web developer.  
 Built with a focus on **modern design**, **performance**, and **clean user experience**.
 
-![Portfolio Screenshot](./screenshots/screenshot-1.png)
-![Portfolio Screenshot](./screenshots/screenshot-2.png)
+![Portfolio Screenshot](https://github.com/fmfuad0/personal-portfolio/blob/master/screenshots/Screenshot-1.png)
+![Portfolio Screenshot](https://github.com/fmfuad0/personal-portfolio/blob/master/screenshots/Screenshot-2.png)
 
 ---
 
