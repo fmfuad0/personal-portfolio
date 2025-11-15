@@ -25,7 +25,7 @@ import classyShopScreenshot5 from '../data/project-images/Classyshop-Screenshot-
 export const projectsData = [
     {
         id: 1,
-        title: "E-Commerce Platform",
+        title: "FOREVER - Cloathing brand website",
         category: ["Frontend"],
         tech: ["React", "Node.js", "MongoDB", "Express"],
         image: foreverCoverFullPage,
@@ -55,7 +55,7 @@ export const projectsData = [
     },
     {
         id: 3,
-        title: "C L A S S Y S H O P",
+        title: "CLASSYSHOP - E-commerce website",
         category: ["Frontend"],
         tech: ["React.js", "TailwindCss", "JWT", "React-auth@google"],
         image: classyShopCoverFullPage,
@@ -65,7 +65,7 @@ export const projectsData = [
         ],
         description:
             "A complete e-commerce-website frontend with excellent features.Explore products accross categories, place and track orders, login with Google and many more",
-        live: "",
+        live: "https://classyshop-e-commerce-shop.netlify.app",
         code: "https://github.com/fmfuad0/e-commerce-website",
     },
     {
