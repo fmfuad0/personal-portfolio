@@ -65,7 +65,7 @@ export const projectsData = [
         ],
         description:
             "A complete e-commerce-website frontend with excellent features.Explore products accross categories, place and track orders, login with Google and many more",
-        live: "https://classyshop-e-commerce-shop.netlify.app",
+        live: "https://classyshop-e-com-shop.netlify.app",
         code: "https://github.com/fmfuad0/e-commerce-website",
     },
     {
