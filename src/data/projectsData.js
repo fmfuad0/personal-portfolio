@@ -13,6 +13,14 @@ import youtubeCloneScreenshot1 from '../data/project-images/youtube-clone-screen
 import youtubeCloneScreenshot2 from '../data/project-images/youtube-clone-screenshot-2.png'
 import youtubeCloneScreenshot3 from '../data/project-images/youtube-clone-screenshot-3.png'
 import youtubeCloneScreenshot4 from '../data/project-images/youtube-clone-screenshot-4.png'
+import classyShopCoverFullPage from '../data/project-images/Classyshop-cover-full-page.png'
+import classyShopCover from '../data/project-images/Classyshop-cover.png'
+import classyShopScreenshot1 from '../data/project-images/Classyshop-Screenshot-1.png'
+import classyShopScreenshot2 from '../data/project-images/Classyshop-Screenshot-2.png'
+import classyShopScreenshot3 from '../data/project-images/Classyshop-Screenshot-3.png'
+import classyShopScreenshot4 from '../data/project-images/Classyshop-Screenshot-4.png'
+import classyShopScreenshot5 from '../data/project-images/Classyshop-Screenshot-5.png'
+
 
 export const projectsData = [
     {
@@ -47,6 +55,21 @@ export const projectsData = [
     },
     {
         id: 3,
+        title: "C L A S S Y S H O P",
+        category: ["Frontend"],
+        tech: ["React.js", "TailwindCss", "JWT", "React-auth@google"],
+        image: classyShopCoverFullPage,
+        coverImage: classyShopCover,
+        screenshots: [
+            classyShopScreenshot1, classyShopScreenshot2, classyShopScreenshot3, classyShopScreenshot4, classyShopScreenshot5, 
+        ],
+        description:
+            "A complete e-commerce-website frontend with excellent features.Explore products accross categories, place and track orders, login with Google and many more",
+        live: "",
+        code: "https://github.com/fmfuad0/e-commerce-website",
+    }
+    {
+        id: 4,
         title: "Youtube UI Clone (*Under Development*)",
         category: ["Full-stack", "Backend", "Frontend"],
         tech: ["Node.js", "Express", "JWT", "MongoDB"],
@@ -58,6 +81,6 @@ export const projectsData = [
         description:
             "A backend dashboard for API management with JWT-based authentication and role access.",
         live: "",
-    code: "https://github.com/fmfuad0/YouTube-clone",
+        code: "https://github.com/fmfuad0/YouTube-clone",
     },
 ];
