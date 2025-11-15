@@ -67,7 +67,7 @@ export const projectsData = [
             "A complete e-commerce-website frontend with excellent features.Explore products accross categories, place and track orders, login with Google and many more",
         live: "",
         code: "https://github.com/fmfuad0/e-commerce-website",
-    }
+    },
     {
         id: 4,
         title: "Youtube UI Clone (*Under Development*)",
