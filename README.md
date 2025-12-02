@@ -78,7 +78,6 @@ portfolio/
 
 - **👽 Md. Fartin Mahtadi Fuad**
 - **💻 Passionate MERN Stack Developer**
-- **📍 Green University of Bangladesh**
 
 ## ⭐ Acknowledgments
 
