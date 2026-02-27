@@ -1,8 +1,10 @@
-# 🌐 Personal Portfolio – *Md. Fartin Mahtadi Fuad*
+# 🌐 Personal Portfolio – Md. Fartin Mahtadi Fuad
 
-Welcome to my personal portfolio!  
-This is my digital space to showcase my **skills, projects, and achievements** as a web developer.  
-Built with a focus on **modern design**, **performance**, and **clean user experience**.
+Welcome to my personal developer portfolio — a modern, high-performance web application designed to showcase **real-world projects**, **scalable frontend architecture**, and **interactive user experiences** built using the **MERN ecosystem**.
+
+This portfolio represents my journey as a developer focused on building **clean, responsive, and production-ready applications** with strong attention to performance and usability.
+
+---
 
 ![Portfolio Screenshot](https://github.com/fmfuad0/personal-portfolio/blob/master/screenshots/Screenshot-1.png)
 ![Portfolio Screenshot](https://github.com/fmfuad0/personal-portfolio/blob/master/screenshots/Screenshot-2.png)
@@ -11,7 +13,55 @@ Built with a focus on **modern design**, **performance**, and **clean user exper
 
 ## 🚀 Live Demo
 
-🔗 **Visit Portfolio:** [View Live](https://portfolio-fm-fuad.netlify.app)
+🔗 **Visit Portfolio:**  
+👉 https://portfolio-fm-fuad.netlify.app
+
+---
+
+## 🏗️ Architecture Highlights
+
+- Component-based scalable **React architecture**
+- Modular folder structure for maintainability
+- Context API for global state management
+- Responsive-first UI design principles
+- Reusable UI components
+- Smooth animations using Framer Motion
+
+---
+
+## ⚡ Performance Optimization
+
+- Vite-powered fast development & optimized builds
+- Lazy loading for improved page performance
+- Optimized assets and rendering
+- Lightweight animation handling
+- Mobile-first responsive optimization
+
+---
+
+## 🧩 Features
+
+- 🏠 Modern landing page introducing skills & expertise
+- 💼 Dynamic projects section with live demos and source code
+- 🧠 Categorized technical skills showcase
+- 📬 Contact form with email integration (Formspree / Resend)
+- 🖥️ Fully responsive across all screen sizes
+- 🌙 Multiple customizable color themes
+- ⚡ Fast loading and smooth navigation experience
+
+---
+
+## 🚀 Tech Stack
+
+| Category | Technologies |
+|-----------|-------------|
+| **Frontend** | React.js (Vite), JavaScript (ES6+), JSX |
+| **Styling** | Tailwind CSS, Material UI |
+| **Animations** | Framer Motion |
+| **State Management** | React Context API |
+| **Email Handling** | Formspree / Resend |
+| **Hosting** | Netlify |
+| **Version Control** | Git & GitHub |
 
 ---
 
