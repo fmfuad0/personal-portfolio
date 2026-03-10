@@ -20,23 +20,26 @@ import classyShopScreenshot2 from '../data/project-images/Classyshop-Screenshot-
 import classyShopScreenshot3 from '../data/project-images/Classyshop-Screenshot-3.png'
 import classyShopScreenshot4 from '../data/project-images/Classyshop-Screenshot-4.png'
 import classyShopScreenshot5 from '../data/project-images/Classyshop-Screenshot-5.png'
-
+import enigmaMachineScreenshot1 from '../data/project-images/Enigma-Machine-Screenshot-1.png'
+import enigmaMachineScreenshot2 from '../data/project-images/Enigma-Machine-Screenshot-2.png'
+import enigmaMachineScreenshot3 from '../data/project-images/Enigma-Machine-Screenshot-3.png'
+import enigmaMachineScreenshot4 from '../data/project-images/Enigma-Machine-Screenshot-4.png'
+import enigmaMachineCover from '../data/project-images/Enigma-Machine-cover-full-page.png'
 
 export const projectsData = [
     {
         id: 1,
-        title: "FOREVER - Cloathing brand website",
+        title: "React Enigma Machine",
         category: ["Frontend"],
-        tech: ["React", "Node.js", "MongoDB", "Express"],
-        image: foreverCoverFullPage,
-        coverImage: foreverCover,
+        tech: ["React", "tailwindcss","framer-motion"],
+        image: enigmaMachineCover,
+        coverImage: enigmaMachineCover,
         screenshots: [
-            foreverScreenshot1, foreverScreenshot2, foreverScreenshot3
+            enigmaMachineScreenshot1, enigmaMachineScreenshot2, enigmaMachineScreenshot3, enigmaMachineScreenshot4
         ],
-        description:
-            "A complete MERN e-commerce app featuring authentication, cart, payments, and admin dashboard.",
-        code: "https://github.com/fmfuad0/FOREVER_e_commerce_shop",
-        live: "https://forever-e-com-store.netlify.app/",
+        description: "A historically accurate Enigma M3 cipher machine simulator — real Wehrmacht rotor wiring, plugboard, and double-stepping anomaly — built with React, Tailwind, and zero cipher dependencies.",
+        live: "react-enigma-machine.netlify.app",
+        code: "https://github.com/fmfuad0/react-enigma-machine",
     },
     {
         id: 2,
@@ -70,6 +73,21 @@ export const projectsData = [
     },
     {
         id: 4,
+        title: "FOREVER - Cloathing brand website",
+        category: ["Frontend"],
+        tech: ["React", "Node.js", "MongoDB", "Express"],
+        image: foreverCoverFullPage,
+        coverImage: foreverCover,
+        screenshots: [
+            foreverScreenshot1, foreverScreenshot2, foreverScreenshot3
+        ],
+        description:
+            "A complete MERN e-commerce app featuring authentication, cart, payments, and admin dashboard.",
+        code: "https://github.com/fmfuad0/FOREVER_e_commerce_shop",
+        live: "https://forever-e-com-store.netlify.app/",
+    },
+    {
+        id: 5,
         title: "Youtube UI Clone (*Under Development*)",
         category: ["Full-stack", "Backend", "Frontend"],
         tech: ["Node.js", "Express", "JWT", "MongoDB"],
@@ -82,5 +100,5 @@ export const projectsData = [
             "A backend dashboard for API management with JWT-based authentication and role access.",
         live: "",
         code: "https://github.com/fmfuad0/YouTube-clone",
-    },
+    }
 ];
